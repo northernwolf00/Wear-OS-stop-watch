@@ -22,7 +22,8 @@ import kotlin.concurrent.timer
 class StopWatchViewModel: ViewModel() {
 
   private val  _elapsedTime = MutableStateFlow(0L)
-    private val _timerState = MutableStateFlow(TimerState.RUNNING)
+
+    private val _timerState = MutableStateFlow(TimerState.RESET)
 
     val timerState = _timerState.asStateFlow()
 
